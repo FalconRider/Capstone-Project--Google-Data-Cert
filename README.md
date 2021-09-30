@@ -1,2 +1,2 @@
 # Capstone Project. 
- WIP coming
+ starts with   main.html   in the page folder
