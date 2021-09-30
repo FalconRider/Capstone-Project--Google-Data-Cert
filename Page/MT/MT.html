@@ -1,0 +1,221 @@
+<html>
+
+<!   README    WIP    Google Data Certificate Capstone Page
+
+A project as required in the last, Capstone course.
+Meant to practice and demonstrate all that was taught there 
+
+Paul Gitschner
+
+
+
+>
+
+<head>
+
+<title>   Google Data Certificate Capstone 	</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+
+       body {
+         background-color: #405060;
+         color:white;
+      }
+
+       h1{
+         color: white;
+         text-align: center;
+         font-size: 1.6em;
+      }
+
+      h2{
+         color: white;
+         text-align: center;
+         font-size: 20px;
+      }
+      h4{
+         color: white;
+         text-align: center;
+         font-size: 10px;
+      }
+
+      .row div{
+			border: 2px solid black;
+			height: 20px;
+			width: 500px;
+			float: left;
+			background-color: #204060;
+			bord	er-radius: 10%;
+			text-align: center;
+			padding-top: 10px;
+			font-size: 15pt;
+	  }
+
+		.row {
+			clear: both;
+
+	  }
+		button{
+			background-color: yellow;
+			width:132px;
+         height: 30px;
+			border-radius: 3px;
+         float:right;
+  	 } 
+
+		#block {
+			margin:auto;
+			width: 50%;
+     }
+
+   .a {
+     display: inline;
+     } 
+    a {
+			background-color: yellow;
+			width:132px;
+         height: 30px;
+			border-radius: 3px;
+         float:right; 
+
+   .b 
+   {
+     display: inline; 
+ 
+}
+   .c {
+      color: white;
+         text-align: center;
+         font-size: 22px;
+
+   } 
+   
+         a {
+			background-color: yellow;
+			width:132px;
+         height: 30px;
+			border-radius: 3px;
+         float:right;     
+        
+  	 } 
+		button{
+			background-color: yellow;
+			width:132px;
+         height: 30px;
+			border-radius: 3px;
+         float:right;
+  	 } 
+
+      p {
+         
+         text-align: center;
+        
+      }  
+		
+	</style>
+
+</head>
+
+<!xxxxxxxxpg2020xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx hb
+
+<body>
+ 
+  
+   <a href = "../Main.html">Main Page</a>
+
+<hr>
+
+
+
+  
+   <h2>Subject:   wip      
+   TWITCH STREAMERS.</h2>
+   <h2> Sources of data, methods of analysis, knowlege derived</h2>
+
+
+<hr>
+
+<div id = "block">
+
+<div>
+
+
+ 
+   <div class = "row"> 
+   		<div id = 's25' onclick="choose(this)">Miss T and Sullygnome</div>
+   		
+   </div>
+<br>
+<p>BACKGROUND</p>
+<P>Miss T is a Twitch streamer who's been streaming frequently for about a year and I have been following. As such she has a more robust dataset than Acodaar.
+   She has a sufficient number of followers, now over 30,000, to be tracked by External 
+   trackers such as Sullygnome. Sully allows the download, in moderation, of CSV files to the public.  I choose her because I am familiar with her activities, including two suspensions which should show graphically in the data. 
+<P></P>
+
+<P>
+   
+   I wish to identify what data sources are available for this streamer,
+   
+   what tools can be appropriate to the aquired data, and what knowledge can be gained from that analysis.
+      
+</p> <p> The key stakeholder Me, the analyzer does not have access to what 
+   Twitch provides all registered streamers directly both in raw data and a propriatory on site analysis package.
+   All I can get from Twitch is the total number of subscribers now from her site. 
+   :</P>
+
+<P> <img src="MT1.png" alt="MT Site Pic"></P>  
+<P>But I can get some detail from external sites, like Sullygnome. 
+   A CSV  file was downloaded and entered on a spreadsheet where it was cleaned of empty columns. 
+</P>
+<P> <img src="SG002.png" alt="MT Site Pic"></P> 
+<P> <img src="MT2.png" alt="MT Site Pic"></P> 
+
+Using Python and Seaborn. Her data showed an outlier that was skewing results.
+<P> <img src="mtg1.png" alt="MT Site Pic"></P> 
+<P> <img src="mtg2.png" alt="MT Site Pic"></P> 
+I located the offender, clearly visisible with a reference  in the scatterplot.
+<P> <img src="mtg3.png" alt="MT Site Pic"></P> 
+Easily traced back to the spreadsheet.
+
+<P> <img src="mtg4.png" alt="MT Site Pic"></P>
+
+I cleaned it and reprocessed.
+<P> <img src="mtg5.png" alt="MT Site Pic"></P> 
+
+This cleaned data next went to RStudio with the following results.
+<P> <img src="RMT001.png" alt="MT Site Pic"></P>
+<P> <img src="RMT002.png" alt="MT Site Pic"></P>
+Barplots were'nt working out
+<P> <img src="RMT003.png" alt="MT Site Pic"></P>
+<P> <img src="RMT004.png" alt="MT Site Pic"></P>
+Some Scattergraphs
+<P> <img src="RMT005.png" alt="MT Site Pic"></P>
+And some line plots.
+<P> <img src="RMT006.png" alt="MT Site Pic"></P>
+
+
+<p></p>Observations and Conclusions:</p>
+
+<p>Miss T is doing great. I think, no finacial info in data.
+I could see her suspensions on the spreadsheet with days missing data.
+Didn't really show in the graphs.</p>
+
+<p></p>The real purpose of this case study was to work with a data set 3 to  10 times larger in lines or lines with data, than the Acodaar case.</P>
+<p>Discovered third party free data was limited in the columns released and no certainty it had not been tampered with.
+If working on a real project best to register for the Twitch Api and get the data at it's source. </p>
+
+     
+      <hr>
+
+      <h2>   Paul J. Gitschner      aka Twitch: ACODAAR , github FalconRider  </h2>
+
+</div></div>
+<!DOCTYPE html>
+
+<br>
+
+
+
+</body>
+
+</html>     

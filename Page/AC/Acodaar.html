@@ -1,0 +1,303 @@
+<html>
+
+<!   README    WIP    Google Data Certificate Capstone Page
+
+A project as required in the last, Capstone course.
+Meant to practice and demonstrate all that was taught there 
+and a few other things learned prior.
+Following, roughly the steps.
+ASK, PREPARE, PROCESS, ANALYZE, SHARE
+with a real life case study:
+
+Specifically:
+
+Who.
+TWITCH, STREAMERS, TEAMS, Overall.
+
+What.
+Sources of tracked Data. Twitch API's and secondary reporters.
+Preparing and Processing raw data, to make it useful.
+Analyzing the Data Obsevations, Corelations, Implications.
+Culling any usefull decsicion support information.
+Communicating visually and making reports.
+
+How.
+USING:
+
+Sequal
+Spreadsheet
+Tableau
+RStudio
+Github
+Twitch
+
+Paul Gitschner
+
+
+
+>
+
+<head>
+
+<title>   Google Data Certificate Capstone 	</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+
+       body {
+         background-color: #405060;
+         color:white;
+      }
+
+       h1{
+         color: white;
+         text-align: center;
+         font-size: 1.6em;
+      }
+
+      h2{
+         color: white;
+         text-align: center;
+         font-size: 20px;
+      }
+      h4{
+         color: white;
+         text-align: center;
+         font-size: 10px;
+      }
+
+      .row div{
+			border: 2px solid black;
+			height: 20px;
+			width: 500px;
+			float: left;
+			background-color: #204060;
+			bord	er-radius: 10%;
+			text-align: center;
+			padding-top: 10px;
+			font-size: 15pt;
+	  }
+
+		.row {
+			clear: both;
+
+	  }
+		button{
+			background-color: red;
+			width:132px;
+         height: 30px;
+			border-radius: 3px;
+         float:right;
+  	 } 
+
+		#block {
+			margin:auto;
+			width: 50%;
+     }
+
+   .a {
+     display: inline;
+     } 
+
+   .b 
+   {
+     display: inline; 
+ 
+}
+   .c {
+      color: white;
+         text-align: center;
+         font-size: 22px;
+
+   } 
+   a {
+			background-color: yellow;
+			width:132px;
+         height: 30px;
+			border-radius: 3px;
+         float:right;
+  	 } 
+		button{
+			background-color: yellow;
+			width:132px;
+         height: 30px;
+			border-radius: 3px;
+         float:right;
+  	 } 
+		
+	</style>
+
+</head>
+
+<!xxxxxxxxpg2020xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx hb
+
+<body>
+ 
+
+   
+   <a href = "../Main.html">Main Page</a>
+
+
+<hr>
+
+
+  
+   <div class = "row"> 
+   		<div id = 's25' onclick="choose(this)">Case Study  - Acodaar</div>
+   		
+   </div>
+
+<br>
+<hr>
+
+<h2>  
+    
+    <p>
+    Acodaar is me,  as a casual Twitch Streamer.</p>
+    <p>
+   
+  
+   Since January 2021 I've been exploring the streaming Platform TWITCH. 
+   
+   
+   As part of my investigations I became  an indiviual Streamer.
+   
+   I have a Twitch site under the username ACODAAR (derived from " I am a coder" and tweaked to sound exotic ) and have done streams of myself building projects with the Unity Game engine. </p>
+   
+   
+   <img src="AC0b.jpg" alt="Acodar Site Pic">
+  
+  
+  
+   
+   
+   <p>ASK PHASE - -
+   Two requirements.</p>
+   
+  <p> 1) Identify the specific problem you are trying to solve. </p>
+   
+   <p>I wish to identify what data sources are available to an individual streamer, </p>
+   <p> what tools can be appropriate to the aquired data, and what knowledge can be gained from that analysis.
+   </p>
+
+   <p> 2) Consider key stakeholders. </p>
+   <p>The key stakeholder is a single streamer with the characteristics of a few exploratory streams, but access
+   to what the host, Twitch provides all registered streamers directly both in raw data and a propriatory on site analysis package.
+   </p>  
+
+   <p>  :</p>
+   <img src="AC1.jpg" alt="Acodar Site Pic">
+    
+  <p>Main Source of Data used. </p>
+
+   
+  
+   <p>For Acodaar:
+   
+</p>
+   
+  <p> The data analysis  on Twitch  with Twitch Dashboard was limited  due to my limited streams. <br>
+   Data sources were non existant from the Twitch API as I do not want to register as a Third Party Twitch developer and initiate an external  website.
+   <br>
+   Data sources from Third Party delevoplers were non existant for  Acodaar due to them
+     having a threshold of activity, usually 4 to 10 "followerers". I had not met this 
+    and their tracking had not commenced.  
+</p>
+   <br>
+   The data with Twitch download was great detail showing what data Twitch records but limited in data entries due to limited streams.
+  <p>  </p>
+   <img src="AC2.jpg" alt="Acodar Site Pic">
+</p>
+  <p> Was able to download a file in Excel format. Columns A to AK. That's 37 tracked statistics.</p>
+
+  <img src="AC3.jpg" alt="Acodar Site Pic">
+  <p> and a quick cut and paste in MS Paint to show where there is some detail.</p>
+  <img src="AC4.jpg" alt="Acodar Site Pic">
+
+   <br>
+   This also gave me insight to what level of detail third party developers get from the Twitch API for active streamers.
+  
+  
+   <p>The process phase of my analysis and  issues with : </p>
+   Bias, credibility, problems with the data, verifying integrity.
+   Data cleaning and manipulation. 
+   
+   
+  <p> I imported the CSV files into a spreadsheet. Calculated all column totals. <br>
+   Eliminated columns with no data and experimented with some sorts   </p>
+  <p> <img src="AC5.jpg" alt="Acodar Site Pic"></p>
+   
+   
+   
+   
+  <p>In the analyze phase of my analysis, I explored with Python and the numerous libraries available for anysis and ploting.
+  </p>
+
+    <p>I tried some things with numpy,  pandas, matplotlib, plotley  and seaborn. Some examples follow showing some problems
+      </p>
+      <p><img src="py001.png" alt="Acodar Site Pic"></p>
+      
+      <p><img src="py003.png" alt="Acodar Site Pic"></p>
+      
+      <p><img src="py005.png" alt="Acodar Site Pic"></p>
+      <p><img src="py006.png" alt="Acodar Site Pic"></p>
+     
+   
+   <p>I visited Tableau Public and referenced my April Acodaar data. Although my explorations were pretty I had a problem
+      with the dates  listing alphabetically. So all the Fridays were bunched at the beginning. Here's some examples of my explorations.
+      
+      </p> 
+
+      <p><img src="tb001.png" alt="Acodar Site Pic"></p>
+      <p><img src="tb002.png" alt="Acodar Site Pic"></p>
+      <p><img src="tb003.png" alt="Acodar Site Pic"></p>
+      <p><img src="tb004.png" alt="Acodar Site Pic"></p>
+      <p><img src="tb005.png" alt="Acodar Site Pic"></p>
+      <p><img src="tb006.png" alt="Acodar Site Pic"></p>
+   
+   <p>I imported the Twitch file for my most active 30 days, April 2021
+      into RStudio and created some data visualizations. I ensured my data’s 
+      integrity and confirmed that it was clean and ready to analyze by reviewing the dates I streamed , after all, I was the source of this data.
+   It was as I remember.</p>
+  
+   <p><img src="AC6.jpg" alt="Acodar Site Pic"></p>
+  
+   
+   These visualizations reflected my findings, data story, and memory. I kept them clean and simple.
+   
+    
+    <p><img src="AC8.jpg" alt="Acodar Site Pic"></p>
+    <p>1.</p>
+    <p><img src="AC82.jpg" alt="Acodar Site Pic"></p>
+    <p>2.</p>
+    <p><img src="AC83.jpg" alt="Acodar Site Pic"></p>
+    <p>3.</p>
+
+
+
+    
+     <p> </p>
+     <p> Conclusions:</p>
+     <p> </p>
+      The anlysis of the data helped confirm my decisions and orient me as to the process. 
+      I had found it awkward concentrating on my work and monitering the chat. Doing neither well, I discontinued after about 2 weeks.
+      Live coding is not a big draw on Twitch and now I know why. I adjusted, coding off screen and posting
+      clips of my finished bits.<p>I still seach for a successful new use case using Twitch for the
+       50 plus demographic, but now proceed with an insider's experience and knowlege.</p> 
+       
+      </p>
+      
+      <p>
+      
+      <hr>
+      <h2>   Paul J. Gitschner      aka Twitch: ACODAAR , github FalconRider  </h2>
+
+</div></div>
+<!DOCTYPE html>
+
+<br>
+
+
+
+</body>
+
+</html>     

@@ -1,0 +1,223 @@
+<html>
+
+<!   README    WIP    Google Data Certificate Capstone Page
+
+Paul Gitschner 2021
+
+>
+
+<head>
+
+<title>   Google Data Certificate Capstone 	</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+
+       body {
+         background-color: #405060;
+         color:white;
+      }
+
+       h1{
+         color: white;
+         text-align: center;
+         font-size: 1.6em;
+      }
+
+      h2{
+         color: white;
+         text-align: center;
+         font-size: 20px;
+      }
+      h4{
+         color: white;
+         text-align: center;
+         font-size: 10px;
+      }
+
+      .row div{
+			border: 2px solid black;
+			height: 20px;
+			width: 500px;
+			float: left;
+			background-color: #204060;
+			bord	er-radius: 10%;
+			text-align: center;
+			padding-top: 10px;
+			font-size: 15pt;
+	  }
+
+		.row {
+			clear: both;
+
+	  }
+		button{
+			background-color: yellow;
+			width:132px;
+         height: 30px;
+			border-radius: 3px;
+         float:right;
+  	 } 
+
+		#block {
+			margin:auto;
+			width: 50%;
+     }
+
+   .a {
+     display: inline;
+     } 
+
+   .b 
+   {
+     display: inline; 
+ 
+}
+   .c {
+      color: white;
+         text-align: center;
+         font-size: 22px;
+
+   } 
+   a {
+			background-color: yellow;
+			width:132px;
+         height: 30px;
+			border-radius: 3px;
+         float:right;
+  	 } 
+		button{
+			background-color: yellow;
+			width:132px;
+         height: 30px;
+			border-radius: 3px;
+         float:right;
+  	 } 
+		
+	</style>
+
+</head>
+
+<!xxxxxxxxpg2020xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx hb
+
+<body>
+ 
+  
+   <a href = "../Main.html">Main Page</a>
+
+<hr>
+
+
+   <h2>Subject:   wip      
+   TWITCH STREAMERS</h2>
+   <h2> Sources of data, methods of analysis, knowlege derived</h2>
+
+
+<hr>
+
+<div id = "block">
+
+<div>
+
+
+ 
+   <div class = "row"> 
+   		<div id = 's25' onclick="choose(this)">Miss M</div>
+   		
+   </div>
+<br>
+<p>BACKGROUND</p>
+<P>Miss M is STAR Twitch streamer who's been streaming frequently for years. She has 750,000 followers
+    As such she has a robust dataset and is tracked by all the External Trackers including Sullygnome. 
+<P></P>
+
+   The key stakeholder is Me, the analyzer, who does not have access to what 
+   Twitch provides all registered streamers. All I can get from Twitch is the total number of followers from her site. 
+   </P>
+
+<P> <img src="MM001.png" alt="MT Site Pic"></P>  
+<P>Although I can get some detail from an external site, like Sullygnome. Sully only allows the download
+   of CSV files of 100 lines a time. I choose her because I am familiar with her activities, and it's a chance to combine 
+   CSV files.  Three consecutively dated 100 day CSV files were downloaded. It totalled less than 100k of data.
+   
+</P>
+I started by combining the 3 spreadsheets. I needed to take the column name headers off the second and third
+ then simply highlighted, and copy and pasted them, to the end of the first, watching my alignments.
+ I eliminated some columns and scanned the spreadsheet for oddities.
+
+<P> <img src="MM002.png" alt="MT Site Pic"></P> 
+
+Using Python and Seaborn. Her data showed some outliers that could  skew results.
+<P> <img src="MMa.png" alt="MT Site Pic"></P>
+I sorted the data in a spreadsheet based on the column with the extreme data, 
+and reduced the upper and lower ranges of the data by deleting rows at the beginning and end. We now have less than the 300 starting records.
+ 
+<P> <img src="MMc.png" alt="MT Site Pic"></P> 
+And reran the same plot.
+
+<P> <img src="MMb.png" alt="MT Site Pic"></P> 
+
+
+
+
+
+Tried a few other things
+<P> <img src="MMe.png" alt="MT Site Pic"></P> 
+<P> <img src="MMf.png" alt="MT Site Pic"></P> 
+<P> <img src="MMg.png" alt="MT Site Pic"></P> 
+
+
+I tried Tableau Public next with the following results
+<P> <img src="MMt1.png" alt="MT Site Pic"></P> 
+I solved my date format problem!
+<P> <img src="MMt2.png" alt="MT Site Pic"></P> 
+<P> <img src="MMt3.png" alt="MT Site Pic"></P> 
+Wrong, I was missing weeks.
+
+<P> <img src="MMt4.png" alt="MT Site Pic"></P> 
+<P> <img src="MMt5.png" alt="MT Site Pic"></P> 
+<P> <img src="MMt6.png" alt="MT Site Pic"></P> 
+Worked it out
+
+
+
+
+
+This cleaned data next went to RStudio with the following results.
+<P> <img src="RMT001.png" alt="MT Site Pic"></P>
+<P> <img src="RMT002.png" alt="MT Site Pic"></P>
+<P> <img src="RMT003.png" alt="MT Site Pic"></P>
+<P> <img src="RMT004.png" alt="MT Site Pic"></P>
+
+
+
+<p></p>Observations and Conclusions:</p>
+
+<p>Miss M .</p>
+
+<p></p>My real purpose of this case study was again to work in the various platforms with a data set 3 times larger again. <datagrid></datagrid>, lines with data, than the Acodaar case.</P>
+<p>Discovered I could still use spreadsheet for data wrangling and did not have to go to a SQL database.
+    Again third party free data was limited in the columns released and I had no certainty it had not been tampered with.
+If working on a real project best to register for the Twitch Api and get the data at it's source. </p>
+
+<p>Thanks again to Sullygnome for my main data .</p>
+
+<P> <img src="SG002.png" alt="Sully site Pic"></P>
+<p>And for my next real life projexct I know what to do.</p>
+
+<P> <img src="TW001.png" alt="Twitch API pic"></P>
+
+     
+      <hr>
+
+      <h2>   Paul J. Gitschner      aka Twitch: ACODAAR , github FalconRider  </h2>
+
+</div></div>
+<!DOCTYPE html>
+
+<br>
+
+
+
+</body>
+
+</html>     
